@@ -78,9 +78,12 @@ function getShortURL(address, domain) {
   let path = '';
 
   if (env.BASE_PATH) {
-    if (linkDomain === env.DEFAULT_DOMAIN) {
-      path = env.BASE_PATH;
-    } else if (env.SHORT_URLS_INCLUDE_PATH) {
+    // if (linkDomain === env.DEFAULT_DOMAIN) {
+    //   path = env.BASE_PATH;
+    // } else if (env.SHORT_URLS_INCLUDE_PATH) {
+    //   path = env.BASE_PATH;
+    // }
+    if (env.SHORT_URLS_INCLUDE_PATH) {
       path = env.BASE_PATH;
     }
   }
